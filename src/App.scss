@@ -5,6 +5,23 @@
     margin: 0 auto;
 }
 
+header {
+    position: sticky;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: #002F34;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.wrapper {
+    box-shadow: 0 0 10px 1px #ccc;
+    width: 1077px;
+    margin: 200px auto 0 !important;
+}
+
 .btn {
     &--light {
         background: #fff;
@@ -24,7 +41,7 @@
 
     &--light:hover {
         background: #002F34;
-        color: #fff!important;
+        color: #fff !important;
         transition: all .3s ease;
         -webkit-transition: all .3s ease;
         -moz-transition: all .3s ease;
@@ -44,4 +61,12 @@
         -ms-border-radius: 4px;
         -o-border-radius: 4px;
     }
+}
+
+hr {
+    margin-top: 2.25rem;
+}
+
+footer {
+    padding-top: 45px !important;
 }

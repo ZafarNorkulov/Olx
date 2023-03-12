@@ -1,12 +1,4 @@
 .header {
-    min-height: 70px;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    background: #002F34;
-    font-family: sans-serif;
-    font-weight: 600;
-
     &__logo {
         width: 70px;
         display: flex;
@@ -41,18 +33,22 @@
         display: flex;
         align-items: center;
         gap: 0 10px;
-        
-}
-    li:hover{
+
+    }
+
+    li:hover {
         color: #ccc;
     }
-    li:hover .message__icon{
+
+    li:hover .message__icon {
         color: #bbb;
     }
-    li:hover .like__icon{
+
+    li:hover .like__icon {
         color: #bbb;
     }
-    li:hover .user__icon{
+
+    li:hover .user__icon {
         color: #b9b9b9;
     }
 
@@ -60,7 +56,8 @@
         display: flex;
         align-items: center;
     }
-    &__language{
-        font-size: 12px!important;
+
+    &__language {
+        font-size: 12px !important;
     }
 }

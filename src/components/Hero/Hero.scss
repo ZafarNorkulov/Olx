@@ -1,24 +1,27 @@
 .hero {
     padding: 40px 0;
-    background: #F2F4F5;
+
+    .container {
+        
+        position: sticky;
+    }
 
     &__list {
         width: 100%;
         display: flex;
         align-items: center;
-        // justify-content: center;
         max-height: 0 1.5rem;
         background: #fff;
-        padding: 0 1.5remR;
+        text-align: center;
+        gap: 0 10px;
+        padding: 0 1.5rem;
     }
 
-    i {
-        font-size: 25px;
-    }
 
     li {
         display: flex;
         align-items: center;
+        color: #002f34;
     }
 
     input {
@@ -27,25 +30,41 @@
         border: none;
         border-right: 1px solid #bbb;
         font-size: 1rem;
+        margin-left: 1rem;
     }
-    input:focus{
+
+    input:focus {
         outline: none;
     }
+
     &__search {
         width: 52%;
     }
 
     &__text {
-        width: 33%;
+        width: 35%;
     }
 
-    &__btn {
-        width: 15%;
+    &__search--icon,
+    &__text--icon,
+    &__btn--icon {
+        font-size: 1.5rem;
     }
-    &__search--btn{
+    &__btn:hover{
+        background: #002f34;
+    }
+    &__btn--icon {
+        margin-left: 10px;
+    }
+
+    &__search--btn {
         border: none;
-        background: #fff;
+        color: #002f34;
         font-size: 1rem;
+        font-weight: 500;
+        background: #fff;
+        font-size: 1.1rem;
+        margin-left: 1rem;
     }
 
 }

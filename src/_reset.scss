@@ -2,7 +2,14 @@
    v5.0.1 | 20191019
    License: none (public domain)
 */
-
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #F2F4F5;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -14,7 +21,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-main, menu, nav, output, ruby, section, summary,
+ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -22,6 +29,12 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+}
+h1,h2,h3,h4,h5,h6{
+	color: #002f34;
+    line-height: 1.0em;
+    font-weight: normal;
+    padding: 0px 0px 0px 0px;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,

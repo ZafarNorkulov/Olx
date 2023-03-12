@@ -1,0 +1,21 @@
+.footer {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__link {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #002f34;
+        line-height: 1.8rem;
+        font-weight: 600;
+    }
+
+    &__apps {
+        .googleplay {
+            margin-right: 10px;
+        }
+    }
+}

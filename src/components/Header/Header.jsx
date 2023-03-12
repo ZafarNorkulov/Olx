@@ -1,12 +1,11 @@
 import React from "react";
 import "./Header.scss";
-
 import { Button, Container } from "../../Utils/Components";
 import { FiMessageCircle, FiHeart, FiUser } from "react-icons/fi";
 
 const Header = () => {
   return (
-    <header className="header">
+    <div className="header">
       <Container>
         <div className="header__wrapper">
           <img
@@ -43,7 +42,7 @@ const Header = () => {
           </nav>
         </div>
       </Container>
-    </header>
+    </div>
   );
 };
 

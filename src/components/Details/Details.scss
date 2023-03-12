@@ -1,0 +1,23 @@
+.details {
+    display: flex;
+    align-items: center;
+    background: #002f34;
+
+    .container {
+        max-width: 51.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .btn--light {
+        padding: 11px 66px;
+        font-weight: 500;
+    }
+
+    strong {
+        font-size: 20px;
+        font-family: sans-serif;
+        color: #fff;
+    }
+}
