@@ -16,24 +16,30 @@ const Header = () => {
           <nav>
             <ul className="header__list">
               <li className="header__language">
-                <span>O'Z</span>
-                <span>|</span>
-                <span>РУ</span>
+                <a href="#">
+                  <span>O'Z</span>
+                  <span>|</span>
+                  <span>РУ</span>
+                </a>
+
               </li>
               <li className="header__message">
                 <a href="#">
                   <FiMessageCircle className="message__icon" />
+                  <h5>Xabarlar</h5>
                 </a>
-                <h5>Xabarlar</h5>
+
               </li>
               <li className="header__like">
-                <FiHeart className="like__icon" />
+                <a href="#"><FiHeart className="like__icon" /></a>
+
               </li>
               <li className="header__like">
                 <a href="#">
                   <FiUser className="user__icon" />
+                  <h5>Hisobingiz</h5>
                 </a>
-                <h5>Hisobingiz</h5>
+
               </li>
               <li>
                 <Button type={"light"} text="E'lon berish" />

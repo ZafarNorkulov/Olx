@@ -36,28 +36,33 @@
 
     }
 
-    li:hover {
-        color: #ccc;
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 0 10px;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
-    li:hover .message__icon {
-        color: #bbb;
+    li:hover a {
+        color: #b9b9b9 !important;
     }
 
-    li:hover .like__icon {
-        color: #bbb;
-    }
-
-    li:hover .user__icon {
+    li :hover h5 {
         color: #b9b9b9;
     }
 
-    &__message {
-        display: flex;
-        align-items: center;
+    li:hover svg {
+        color: #b9b9b9;
     }
+
 
     &__language {
         font-size: 12px !important;
+    }
+
+    h5 {
+        color: #fff;
     }
 }

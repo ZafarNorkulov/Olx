@@ -2,7 +2,7 @@
     padding: 40px 0;
 
     .container {
-        
+
         position: sticky;
     }
 
@@ -10,11 +10,7 @@
         width: 100%;
         display: flex;
         align-items: center;
-        max-height: 0 1.5rem;
         background: #fff;
-        text-align: center;
-        gap: 0 10px;
-        padding: 0 1.5rem;
     }
 
 
@@ -39,10 +35,22 @@
 
     &__search {
         width: 52%;
+        padding-left: 10px;
     }
 
     &__text {
         width: 35%;
+        padding-left: 10px;
+    }
+
+    &__btn {
+        width: 17%;
+        height: 100%;
+        padding: 17px 0 18px;
+        padding-left: 10px;
+        display: flex;
+        justify-content: center;
+        
     }
 
     &__search--icon,
@@ -50,21 +58,26 @@
     &__btn--icon {
         font-size: 1.5rem;
     }
-    &__btn:hover{
-        background: #002f34;
-    }
+
     &__btn--icon {
         margin-left: 10px;
     }
 
+
+    &__btn:hover {
+        background: #002f34;
+    }
+
+    &__btn:hover &__search--btn {
+        color: #fff;
+    }
+
     &__search--btn {
         border: none;
-        color: #002f34;
         font-size: 1rem;
         font-weight: 500;
-        background: #fff;
+        background: transparent;
         font-size: 1.1rem;
-        margin-left: 1rem;
     }
 
 }
