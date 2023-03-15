@@ -1,4 +1,13 @@
 .header {
+    position: sticky;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background: #002F34;
+    font-family: sans-serif;
+    font-weight: 600;
+
     &__logo {
         width: 70px;
         display: flex;

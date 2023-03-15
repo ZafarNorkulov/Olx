@@ -2,10 +2,11 @@ import React from "react";
 import "./Header.scss";
 import { Button, Container } from "../../Utils/Components";
 import { FiMessageCircle, FiHeart, FiUser } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <Container>
         <div className="header__wrapper">
           <img
@@ -24,10 +25,10 @@ const Header = () => {
 
               </li>
               <li className="header__message">
-                <a href="#">
+                <Link  href="#">
                   <FiMessageCircle className="message__icon" />
                   <h5>Xabarlar</h5>
-                </a>
+                </Link>
 
               </li>
               <li className="header__like">
@@ -48,7 +49,7 @@ const Header = () => {
           </nav>
         </div>
       </Container>
-    </div>
+    </header>
   );
 };
 

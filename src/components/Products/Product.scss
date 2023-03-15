@@ -5,6 +5,11 @@
         padding: 2.5rem 1.5rem;
     }
 
+    &__link {
+        text-decoration: none;
+        color: #000;
+    }
+
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -24,10 +29,15 @@
     }
 
     &__name {
-        padding: 1rem 0;
-        margin-bottom: 2.4rem;
+        display: inline-block;
+        margin: 1rem 0 3.4rem;
         font-weight: 500;
         color: #002f34;
+
+        &:hover {
+            color: #fff;
+            background: #002f34;
+        }
     }
 
     &__body {
@@ -39,5 +49,7 @@
     &__price {
         font-weight: 600;
         color: #002f34;
+
     }
+
 }

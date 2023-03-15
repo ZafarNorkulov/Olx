@@ -35,10 +35,15 @@
     }
 
     &__name {
+        display: inline-block;
         margin-top: 1rem;
         color: #002f34;
         font-family: "Arial", Helvetica, sans-serif;
         font-weight: 500;
+        &:hover{
+            color: #fff;
+            background: #002f34;
+        }
     }
 
 }

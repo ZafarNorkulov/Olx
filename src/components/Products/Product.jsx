@@ -14,13 +14,11 @@ const ProductList = () => {
     <section className="product">
       <Container>
         <div className="product__wrapper">
-          {productData.map((item) => (
-            <ProductItem
-              img={item.images}
-              title={item.title}
-              price={item.price}
-            />
-          ))}
+          {
+            productData.map((item) => (
+              <ProductItem key={item.id} data={item} />
+            ))
+          }
         </div>
       </Container>
     </section>

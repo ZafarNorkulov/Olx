@@ -4,7 +4,7 @@ import { Container } from '../../Utils/Components';
 
 const Footer = () => {
     return (
-        <>
+        <footer>
             <Container>
                 <div className="footer__wrapper">
                     <ul>
@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
                 </div>
             </Container>
-        </>
+        </footer>
     );
 }
 

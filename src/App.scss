@@ -1,19 +1,12 @@
+body {
+    background: #F2F4F5;
+}
+
 .container {
     width: 100%;
     max-width: 1077px;
     padding: 0 24px;
     margin: 0 auto;
-}
-
-header {
-    position: sticky;
-    min-height: 70px;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    background: #002F34;
-    font-family: sans-serif;
-    font-weight: 600;
 }
 
 .wrapper {
@@ -60,6 +53,16 @@ header {
         -moz-border-radius: 4px;
         -ms-border-radius: 4px;
         -o-border-radius: 4px;
+    }
+
+    &--dark:hover {
+        background: #fff;
+        color: #002F34 !important;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
     }
 }
 
