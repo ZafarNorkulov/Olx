@@ -12,7 +12,6 @@ const ProductList = () => {
 
   return (
     <section className="product">
-      <Container>
         <div className="product__wrapper">
           {
             productData.map((item) => (
@@ -20,7 +19,6 @@ const ProductList = () => {
             ))
           }
         </div>
-      </Container>
     </section>
   );
 };

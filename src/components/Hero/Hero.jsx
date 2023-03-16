@@ -6,7 +6,6 @@ import { Container } from "../../Utils/Components";
 const Hero = () => {
   return (
     <div className="hero">
-      <Container>
         <ul className="hero__list">
           <li className="hero__search">
             <FiSearch className="hero__search--icon" />
@@ -31,7 +30,6 @@ const Hero = () => {
             </button>
           </li>
         </ul>
-      </Container>
     </div>
   );
 };

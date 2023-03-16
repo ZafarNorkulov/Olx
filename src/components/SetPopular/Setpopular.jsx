@@ -11,8 +11,7 @@ const Setpopular = () => {
                     <strong>OLX servisining boʻlimlari: </strong> 
                     <a href="#">Bolalar dunyosi</a>, <a href="#">Ko'chmas mulk</a>, <a href="#">Transport</a>, <a href="#">Ish</a>, <a href="#">Hayvonlar</a>, <a href="#">Uy va bog'</a>, <a href="#">Elektr jihozlari</a>, <a href="#">Xizmatlar</a>, <a href="#">Moda va stil</a>, <a href="#">Xobbi</a>, <a href="#">dam olish sport</a>, <a href="#">Tekinga beraman</a>, <a href="#">Ayirboshlash</a>``
                 </p>
-            </Container>
-
+                </Container>
         </section>
     );
 }

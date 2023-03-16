@@ -7,6 +7,7 @@ import Hero from '../../components/Hero/Hero';
 import ProductList from '../../components/Products/Product';
 import Setpopular from '../../components/SetPopular/Setpopular';
 import Details from '../../components/Details/Details'
+import { Container } from '../../Utils/Components';
 
 const Home = () => {
     return (
@@ -16,11 +17,11 @@ const Home = () => {
                 <Hero />
                 <CategoriesList />
                 <ProductList />
-                <Details />
-                <About />
-                <Setpopular />
-                <hr />
-                <Footer />
+                    <Details />
+                    <About />
+                    <Setpopular />
+                    <hr />
+                    <Footer />
             </div>
         </>
     );

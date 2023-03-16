@@ -13,14 +13,12 @@ const CategoriesList = () => {
 
   return (
     <section className="category">
-      <Container>
         <h2 className="category__title">Bosh toifalar</h2>
         <div className="category__wrapper">
           {categoryData.map((item) => (
             <CategoryItem img={item.image} title={item.name} />
           ))}
         </div>
-      </Container>
     </section>
   );
 };
