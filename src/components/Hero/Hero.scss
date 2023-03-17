@@ -50,7 +50,7 @@
         padding-left: 10px;
         display: flex;
         justify-content: center;
-        
+
     }
 
     &__search--icon,
@@ -78,6 +78,22 @@
         font-weight: 500;
         background: transparent;
         font-size: 1.1rem;
+    }
+
+    .search-result-item {
+        display: block;
+        padding: 13px 10px;
+        font-size: 20px;
+        border-bottom: 1px solid #e2e1e1;
+
+        &:last-child {
+            border: none;
+        }
+
+        &:hover {
+            background-color: #002f34;
+            color: #fff;
+        }
     }
 
 }

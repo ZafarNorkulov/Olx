@@ -15,11 +15,12 @@ const ProductItem = ({ data }) => {
         <img src={data.images[0]} className="product__image" />
         <h2 className="product__name">{data.title}</h2>
       </Link>
+
       <div className="product__body">
         <h2 className="product__price">{data.price} 000 so'm</h2>
         <i className={`${checkBtn} fa-heart `} onClick={like} />
       </div>
-    </div>
+    </div >
   );
 };
 

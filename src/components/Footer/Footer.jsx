@@ -1,14 +1,16 @@
 import React from 'react';
 import './Footer.scss'
 import { Container } from '../../Utils/Components';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className='footer'>
+            <hr />
             <Container>
                 <div className="footer__wrapper">
                     <ul>
-                        <li><a className='footer__link' href="#">Mobil Ilovalar</a></li>
+                        <li><Link to={'/mobileapps'} className='footer__link' >Mobil Ilovalar</Link></li>
                         <li><a className='footer__link' href="#">Yordam</a></li>
                         <li><a className='footer__link' href="#">Pullik xizmatlar</a></li>
                         <li><a className='footer__link' href="#">OLX-da biznes</a></li>
@@ -27,8 +29,11 @@ const Footer = () => {
 
                     </ul>
                     <div className="footer__apps">
-                        <img className='googleplay' src="src/assets/images/GooglePlay.png" />
-                        <img src="src/assets/images/AppStore.png" />
+                        <a href="https://play.google.com/store/apps/details?id=com.torg.torg&hl=ru&referrer=utm_source%3Dolx.uz%26utm_medium%3Dcpc%26utm_campaign%3Dandroid-app-landing"><img className='googleplay' src="src/assets/images/GooglePlay.png" />
+                        </a>
+                        <a href="https://itunes.apple.com/uz/app/torg.uz/id665094472?mt=8&ign-mpt=uo%3D4">
+                            <img src="src/assets/images/AppStore.png" />
+                        </a>
                     </div>
                 </div>
             </Container>

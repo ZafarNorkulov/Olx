@@ -20,7 +20,6 @@ const Home = () => {
                     <Details />
                     <About />
                     <Setpopular />
-                    <hr />
                     <Footer />
             </div>
         </>
