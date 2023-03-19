@@ -2,30 +2,35 @@ import React from 'react';
 import './Footer.scss'
 import { Container } from '../../Utils/Components';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+
+    const { t } = useTranslation()
+
     return (
         <footer className='footer'>
             <hr />
             <Container>
                 <div className="footer__wrapper">
                     <ul>
-                        <li><Link to={'/mobileapps'} className='footer__link' >Mobil Ilovalar</Link></li>
-                        <li><a className='footer__link' href="#">Yordam</a></li>
-                        <li><a className='footer__link' href="#">Pullik xizmatlar</a></li>
-                        <li><a className='footer__link' href="#">OLX-da biznes</a></li>
-                        <li><a className='footer__link' href="#">Saytda reklama</a></li>
-                        <li><a className='footer__link' href="#">Foydalanish shartlari</a></li>
-                        <li><a className='footer__link' href="#">Maxfiylik siyosati</a></li>
-                        <li><a className='footer__link' href="#">Hamkorlar</a></li>
+                        <li><Link to={'/mobileapps'} className='footer__link' >{t("footer__apps")}</Link></li>
+                        <li><a className='footer__link' href="#">{t("footer__help")}</a></li>
+                        <li><a className='footer__link' href="#">{t("footer__paid")}</a></li>
+                        <li><a className='footer__link' href="#">{t("footer__bussines")}</a></li>
+                        <li><a className='footer__link' href="#">{t("footer__terms")}</a></li>
+                        <li><a className='footer__link' href="#">{t("footer__privacy")}</a></li>
+                        <li><a className='footer__link' href="#">{t("footer__privacy")}</a></li>
+                        <li><a className='footer__link' href="#">{t("footer__partners")}</a></li>
                     </ul>
+
                     <ul>
-                        <li><a className='footer__link' href="#">Qanday sotib olish va sotish?</a></li>
-                        <li><a className='footer__link' href="#">Xavfsizlik qoidalari</a></li>
-                        <li><a className='footer__link' href="#">Sayt xaritasi</a></li>
-                        <li><a className='footer__link' href="#">Mintaqalar xaritasi</a></li>
-                        <li><a className='footer__link' href="#">Career</a></li>
-                        <li><a className='footer__link' href="#">Teskari aloqa</a></li>
+                        <li><a className='footer__link' href="#">{t("footer__howsell")}</a></li>
+                        <li><a className='footer__link' href="#">{t("footer__safety")}</a></li>
+                        <li><a className='footer__link' href="#">{t("footer__map")}</a></li>
+                        <li><a className='footer__link' href="#">{t("footer__map--region")}</a></li>
+                        <li><a className='footer__link' href="#">{t("footer__career")}</a></li>
+                        <li><a className='footer__link' href="#">{t("footer__feedback")}</a></li>
 
                     </ul>
                     <div className="footer__apps">

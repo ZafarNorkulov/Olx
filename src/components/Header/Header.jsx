@@ -1,10 +1,19 @@
 import React from "react";
-import "./Header.scss";
 import { Button, Container } from "../../Utils/Components";
 import { FiMessageCircle, FiHeart, FiUser } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import i18n from "../../Language/i18next";
+import { useTranslation } from "react-i18next";
+// import Register from "../../Pages/Register/Register";
+import "./Header.scss";
+
 
 const Header = () => {
+  const { t } = useTranslation()
+
+  const handlChangeLanguage = (e) => {
+    i18n.changeLanguage(e.target.value)
+  }
   return (
     <header className="header">
       <Container>
@@ -17,33 +26,36 @@ const Header = () => {
           <nav>
             <ul className="header__list">
               <li className="header__language">
-                <a href="#">
-                  <span>O'Z</span>
-                  <span>|</span>
-                  <span>РУ</span>
-                </a>
+                <select onChange={handlChangeLanguage}>
+                  <option value="uz">{t("select__uz")}</option>
+                  <option value="en">{t("select__en")}</option>
+                  <option value="ru">{t("select__ru")}</option>
+                </select>
 
               </li>
               <li className="header__message">
-                <Link  href="#">
+                <Link>
                   <FiMessageCircle className="message__icon" />
-                  <h5>Xabarlar</h5>
+                  <h5>{t("header__messags")}</h5>
                 </Link>
 
               </li>
               <li className="header__like">
-                <a href="#"><FiHeart className="like__icon" /></a>
+                <Link to={'/products/like'}>
+                  <FiHeart className="like__icon" />
+                </Link>
 
               </li>
               <li className="header__like">
-                <a href="#">
+                <Link to='/register'>
                   <FiUser className="user__icon" />
-                  <h5>Hisobingiz</h5>
-                </a>
+                  <h5>{t("header__account")}</h5>
+                </Link>
+
 
               </li>
               <li>
-                <Button type={"light"} text="E'lon berish" />
+                <Button mode={"light"} text={t("header__button")} />
               </li>
             </ul>
           </nav>

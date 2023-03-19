@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import "./Product.scss";
 import { Link } from "react-router-dom";
+import "./Product.scss";
+
+
 const ProductItem = ({ data }) => {
   const [click, setClick] = useState(false)
 
   const like = () => {
     setClick(click => !click)
+
   }
   let checkBtn = click ? 'fa-solid' : 'fa-regular'
 

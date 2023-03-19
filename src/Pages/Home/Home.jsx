@@ -17,10 +17,10 @@ const Home = () => {
                 <Hero />
                 <CategoriesList />
                 <ProductList />
-                    <Details />
-                    <About />
-                    <Setpopular />
-                    <Footer />
+                <Details />
+                <About />
+                <Setpopular />
+                <Footer />
             </div>
         </>
     );

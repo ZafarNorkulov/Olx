@@ -20,6 +20,31 @@ body {
 }
 
 .btn {
+
+
+    &--dark {
+        padding: .5rem 2rem;
+        background: #002F34;
+        color: #fff;
+        border: 3px solid #002F34;
+        text-decoration: none;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
+
+    &--dark:hover {
+        background: #fff;
+        color: #002F34 !important;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+    }
+
     &--light {
         background: #fff;
         padding: 13px 22px;
@@ -39,29 +64,6 @@ body {
     &--light:hover {
         background: #002F34;
         color: #fff !important;
-        transition: all .3s ease;
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-        -o-transition: all .3s ease;
-    }
-
-    &--dark {
-        padding: .5rem 2rem;
-        background: #002F34;
-        color: #fff;
-        border: 3px solid #002F34;
-        text-decoration: none;
-        border-radius: 4px;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        -ms-border-radius: 4px;
-        -o-border-radius: 4px;
-    }
-
-    &--dark:hover {
-        background: #fff;
-        color: #002F34 !important;
         transition: all .3s ease;
         -webkit-transition: all .3s ease;
         -moz-transition: all .3s ease;

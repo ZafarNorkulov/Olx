@@ -1,8 +1,8 @@
 import React from "react";
 
-const Button = ({ type, text }) => {
+const Button = ({ mode, text }) => {
   return (
-    <a className={type == "light" ? "btn--light" : "btn--dark"} href="#">
+    <a className={mode == "light" ? "btn--light" : "btn--dark"} href="#">
       {text}
     </a>
   );

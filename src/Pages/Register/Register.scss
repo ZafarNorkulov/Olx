@@ -1,0 +1,22 @@
+.register {
+    height: 100vh;
+    padding-top: 4rem;
+    background: #3A77FF;
+
+    &__wrapper {
+        background: #fff;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    &__header--btn {
+        width: 50%;
+        padding: 1rem 1.5rem;
+        border: none;
+        border-bottom: 1px solid #bbb;
+        outline: none;
+        background: transparent;
+        cursor: pointer;
+
+    }
+}

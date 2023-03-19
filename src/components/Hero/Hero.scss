@@ -1,5 +1,6 @@
 .hero {
     padding: 40px 0;
+    margin-top: 6.25rem;
 
     .container {
 
@@ -53,6 +54,8 @@
 
     }
 
+
+
     &__search--icon,
     &__text--icon,
     &__btn--icon {
@@ -80,10 +83,23 @@
         font-size: 1.1rem;
     }
 
+    &__res {
+        width: 50%;
+        background: #fff;
+
+    }
+
+    .search-suggestions {
+        padding-left: 2rem;
+    }
+
     .search-result-item {
         display: block;
         padding: 13px 10px;
-        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #000;
+        font-size: 1.1rem;
         border-bottom: 1px solid #e2e1e1;
 
         &:last-child {

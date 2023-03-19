@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import CategoryItem from "./CategoryItem";
 // import { instance } from "../../Api/instance";
-import { Container } from "../../Utils/Components";
+import { useTranslation } from "react-i18next";
 const CategoriesList = () => {
+
+  const {t} = useTranslation()
+
   const [categoryData, setCategoryData] = useState([]);
 
   useEffect(() => {
@@ -13,12 +16,13 @@ const CategoriesList = () => {
 
   return (
     <section className="category">
-        <h2 className="category__title">Bosh toifalar</h2>
-        <div className="category__wrapper">
-          {categoryData.map((item) => (
-            <CategoryItem img={item.image} title={item.name} />
-          ))}
-        </div>
+      <h2 className="category__title">{t("category__title")}</h2>
+      <div className="category__wrapper">
+        {
+        categoryData.map((item) => (
+          <CategoryItem img={item.image} title={item.name} id={item.id} />
+        ))}
+      </div>
     </section>
   );
 };
