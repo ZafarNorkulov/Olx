@@ -7,13 +7,12 @@ import { useTranslation } from "react-i18next";
 // import Register from "../../Pages/Register/Register";
 import "./Header.scss";
 
-
 const Header = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const handlChangeLanguage = (e) => {
-    i18n.changeLanguage(e.target.value)
-  }
+    i18n.changeLanguage(e.target.value);
+  };
   return (
     <header className="header">
       <Container>
@@ -31,28 +30,23 @@ const Header = () => {
                   <option value="en">{t("select__en")}</option>
                   <option value="ru">{t("select__ru")}</option>
                 </select>
-
               </li>
               <li className="header__message">
                 <Link>
                   <FiMessageCircle className="message__icon" />
                   <h5>{t("header__messags")}</h5>
                 </Link>
-
               </li>
               <li className="header__like">
-                <Link to={'/products/like'}>
+                <Link to={"/products/like"}>
                   <FiHeart className="like__icon" />
                 </Link>
-
               </li>
               <li className="header__like">
-                <Link to='/register'>
+                <Link to="/auth">
                   <FiUser className="user__icon" />
                   <h5>{t("header__account")}</h5>
                 </Link>
-
-
               </li>
               <li>
                 <Button mode={"light"} text={t("header__button")} />
